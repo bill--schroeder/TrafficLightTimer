@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/top_controls">
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="57dp"
+		    android:layout_height="wrap_content"
+		    android:text="Seconds"
+		    android:textSize="13dp"
+		    android:layout_marginLeft="7dp" />
+			    
+		<SeekBar
+		    android:id="@+id/seekBar1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="65dp"
+		    android:indeterminate="false"
+		    android:max="3600"
+		    android:minWidth="190dp"
+		    android:progress="300" />
+
+		<EditText
+		    android:id="@+id/editText1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@+id/seekBar1"
+		    android:ems="2"
+		    android:width="60dp"
+		    android:inputType="time"
+		    android:text="300" >
+
+		    <requestFocus />
+		</EditText>
+
+		<Button
+		    android:id="@+id/buttonTimer"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+	    	android:layout_below="@+id/editText1"
+		    android:text="Start"
+		    android:layout_marginLeft="37dp" />
+		
+		<TextView
+		    android:id="@+id/textViewCountDown"
+		    android:layout_width="77dp"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/editText1"
+		    android:text=""
+		    android:textSize="23dp"
+    		android:layout_centerInParent="true" 
+    		android:layout_centerVertical="true" 
+    		android:layout_centerHorizontal="true"  />
+
+	</RelativeLayout>    
+	
+	<RelativeLayout
+	    android:id="@+id/middle_controls"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_below="@+id/top_controls">
+		<!--ImageView android:id="@+id/ImageView01"
+			android:src="@drawable/header_2b"
+			android:scaleType="fitXY"
+			android:layout_width="fill_parent" 
+			android:layout_height="111dp"
+			android:layout_alignParentTop="true"/-->
+		<ImageView
+			android:id="@+id/imageView"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:src="@drawable/trafficlightsgreen"
+		    />
+	</RelativeLayout>
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/bottom_controls" 
+	    android:layout_below="@+id/middle_controls">
+		
+	</RelativeLayout>    
+		
+</RelativeLayout>

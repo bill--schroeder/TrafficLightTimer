@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+
+    <string name="app_name">Traffic Light Timer</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Traffic Light Timer</string>
+
+	<string name="MY_AD_UNIT_ID">agltb3B1Yi1pbmNyDQsSBFNpdGUYiL7xFAw</string>
+</resources>
